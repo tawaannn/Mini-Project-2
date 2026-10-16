@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>รายการงานของฉัน</h1>
+      <button onclick="logout()">ออกจากระบบ</button>
+    </div>
+
+    <div class="add-task">
+      <input type="text" id="taskTitle" placeholder="ชื่องาน">
+      <input type="text" id="taskDescription" placeholder="รายละเอียด">
+      <button onclick="addTask()">เพิ่มงาน</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="js/tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager - เข้าสู่ระบบ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+    <div class="form-box" id="loginBox">
+      <h2>เข้าสู่ระบบ</h2>
+      <input type="text" id="loginUsername" placeholder="ชื่อผู้ใช้">
+      <input type="password" id="loginPassword" placeholder="รหัสผ่าน">
+      <button onclick="login()">เข้าสู่ระบบ</button>
+      <p>ยังไม่มีบัญชี? <a href="#" onclick="toggleForm()">สมัครสมาชิก</a></p>
+      <p class="error" id="loginError"></p>
+    </div>
+
+    <div class="form-box hidden" id="registerBox">
+      <h2>สมัครสมาชิก</h2>
+      <input type="text" id="registerUsername" placeholder="ชื่อผู้ใช้">
+      <input type="password" id="registerPassword" placeholder="รหัสผ่าน">
+      <button onclick="register()">สมัครสมาชิก</button>
+      <p>มีบัญชีแล้ว? <a href="#" onclick="toggleForm()">เข้าสู่ระบบ</a></p>
+      <p class="error" id="registerError"></p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
